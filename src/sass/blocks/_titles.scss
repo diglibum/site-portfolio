@@ -1,0 +1,37 @@
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    &-circle {
+        position: relative;
+        z-index: 2;
+        padding: 6px 0 0 12px;
+        @include before_circle;
+    }
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 15px;
+}
+
+.section-header {
+    padding-top: 120px;
+
+    .title {
+        text-align: center;
+        padding-left: 0;
+
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+}

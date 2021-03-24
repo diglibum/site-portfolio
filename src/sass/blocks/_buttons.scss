@@ -1,0 +1,21 @@
+.btn {
+    min-height: 45px;
+    padding: 12px 25px;
+    background: $primary-color;
+    color: #000;
+    border: none;
+
+    &:hover {
+        color: #000;
+        text-decoration: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &_transparent {
+        background: none;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}

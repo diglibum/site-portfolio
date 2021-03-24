@@ -1,0 +1,160 @@
+@media (max-width: 1400px) {}
+
+@media (max-width: 1316px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .portfolio {
+        &__wrapper {
+
+            .vertical,
+            .horizontal {
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-columns: 302px 1fr;
+            column-gap: 40px;
+        }
+    }
+
+    .resume {
+        &__wrapper {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+            justify-content: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .contacts {
+        padding-bottom: 50px;
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+            padding: 40px 0 0 0;
+        }
+
+        &__photo {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .promo {
+        &__subtitle {
+            font-size: 26px;
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section-header {
+        padding-top: 40px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .promo {
+        background-position: 55%;
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+    .menu {
+        &__block {
+            width: 250px;
+        }
+
+        &__list {
+            margin-left: 20px;
+        }
+    }
+
+    .about {
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__photo {
+            grid-row: unset;
+            height: 340px;
+        }
+    }
+
+    .skills {
+        &__ratings {
+            grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        &__subtitle {
+            width: 100%;
+        }
+    }
+
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 260px);
+        }
+    }
+
+    .contacts {
+        &__form {
+            grid-template-columns: 1fr;
+            grid-template-rows: 45px 45px 190px 45px;
+
+            &-textarea {
+                grid-column: unset;
+            }
+        }
+    }
+}
